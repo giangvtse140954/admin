@@ -35,11 +35,11 @@ const columns = [
 const rows = [
   {
     id: '1',
-    fullname: 'Tiệm sửa xe Thiên Hương',
+    fullname: 'Tiệm sửa xe Thiên Đường',
     email: 'vuthugiang2610@gmail.com',
     birthdate: '6/1/2020',
     phone: '0988.246.000',
-    rating: '1.5 sao',
+    rating: '★★★✰✰',
   },
   {
     id: '2',
@@ -47,31 +47,31 @@ const rows = [
     email: 'nhantran@gmail.com',
     birthdate: '9/1/2020',
     phone: '0988.246.910',
-    rating: '0.5 sao',
+    rating: '★★★★✰',
   },
   {
     id: '3',
-    fullname: 'Sửa xe chất lượng cao Vĩnh Tín',
+    fullname: 'Sửa xe Thạch Lam',
     email: 'baohoangpham@gmail.com',
     birthdate: '6/1/2020',
     phone: '0988.246.920',
-    rating: '1.0 sao',
+    rating: '★★★★✰',
   },
   {
     id: '4',
-    fullname: 'Sửa xe 24h',
+    fullname: 'Sửa xe chất lượng cao Vĩnh Ký',
     email: 'hungnguyen@gmail.com',
     birthdate: '6/1/2021',
     phone: '0988.246.930',
-    rating: '0.75 sao',
+    rating: '★★★★✰',
   },
   {
     id: '5',
-    fullname: 'Gara Thanh Hiền',
+    fullname: 'Sửa xe nhanh chóng Đạt Lợi',
     email: 'tunhm@gmail.com',
     birthdate: null,
     phone: '0988.246.904',
-    rating: '1.5 sao',
+    rating: '★★✰✰✰',
   },
   {
     id: '6',
@@ -79,7 +79,7 @@ const rows = [
     email: 'vycnn@gmail.com',
     birthdate: '6/1/2002',
     phone: '0988.246.950',
-    rating: '1.0 sao',
+    rating: '★✰✰✰✰',
   },
   {
     id: '7',
@@ -87,7 +87,7 @@ const rows = [
     email: 'ongjohnvelog@gmail.com',
     birthdate: '6/1/2020',
     phone: '0988.246.960',
-    rating: '1.5 sao',
+    rating: '★★★★✰',
   },
   {
     id: '8',
@@ -95,7 +95,7 @@ const rows = [
     email: 'daothienphuc@gmail.com',
     birthdate: '6/1/2001',
     phone: '0988.246.970',
-    rating: '1.25 sao',
+    rating: '★★★★✰',
   },
   {
     id: '9',
@@ -103,7 +103,7 @@ const rows = [
     email: 'thaovu@gmail.com',
     birthdate: '6/4/2020',
     phone: '0988.246.870',
-    rating: '1.5 sao',
+    rating: '★★✰✰✰',
   },
 ];
 const useStyles = makeStyles((theme) => ({

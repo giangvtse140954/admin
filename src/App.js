@@ -8,7 +8,7 @@ import LowRating from './LowRating';
 import SpamUser from './SpamUser';
 import GarageDetail from './GarageDetail';
 
-const drawerWidth = 250;
+const drawerWidth = 260;
 
 const useStyles = makeStyles((theme) => ({
   content: {

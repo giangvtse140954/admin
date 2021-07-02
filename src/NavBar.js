@@ -20,7 +20,7 @@ import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 import TurnedInIcon from '@material-ui/icons/TurnedIn';
 import { useHistory } from 'react-router-dom';
 
-const drawerWidth = 240;
+const drawerWidth = 250;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -155,7 +155,7 @@ const NavBar = () => {
               <ListItemIcon>
                 <ThumbDownIcon />
               </ListItemIcon>
-              <ListItemText primary='Đánh giá thấp' />
+              <ListItemText primary='Cửa hàng rating thấp' />
             </ListItem>
           </Link>
           <Link to='/spam-user' className={classes.link}>
@@ -170,7 +170,7 @@ const NavBar = () => {
               <ListItemIcon>
                 <People />
               </ListItemIcon>
-              <ListItemText primary='Báo cáo xấu' />
+              <ListItemText primary='Người dùng xấu' />
             </ListItem>
           </Link>
         </List>

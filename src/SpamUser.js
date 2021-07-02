@@ -196,7 +196,7 @@ const SpamUser = () => {
         </Fade>
       </Modal>
       <Typography variant='h4' align='center' style={{ marginTop: 100 }}>
-        Danh sách báo cáo xấu về người dùng
+        Danh sách người dùng xấu
       </Typography>
       <div className={classes.searchBox}>
         <SearchBox content='Tìm tài khoản theo tên' />
