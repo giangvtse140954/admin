@@ -10,6 +10,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import RoomIcon from '@material-ui/icons/Room';
 import Rating from '@material-ui/lab/Rating';
+import Comment from './Comment';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -171,6 +172,10 @@ const GarageDetail = () => {
           </TableContainer>
         </div>
       </div>
+      <Typography variant='h4' align='center' style={{ marginBottom: 30 }}>
+        Feedback
+      </Typography>
+      <Comment />
     </div>
   );
 };
