@@ -122,7 +122,7 @@ const Login = () => {
                 >
                   <Link
                     style={{ textDecoration: 'none', color: '#fff' }}
-                    to='/Dashboard'
+                    to='/'
                   >
                     Đăng nhập
                   </Link>

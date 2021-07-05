@@ -173,8 +173,9 @@ const GarageDetail = () => {
         </div>
       </div>
       <Typography variant='h4' align='center' style={{ marginBottom: 30 }}>
-        Feedback
+        Đánh giá - nhận xét từ khách hàng
       </Typography>
+      <Typography variant='h6'>Số nhận xét: 3</Typography>
       <Comment />
     </div>
   );
