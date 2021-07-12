@@ -201,7 +201,7 @@ const LowRating = () => {
         Danh sách cửa hàng bị đánh giá thấp
       </Typography>
       <div className={classes.searchBox}>
-        <SearchBox content='Tìm tài khoản theo tên' />
+        <SearchBox content='Tìm cửa hàng theo tên' />
         <div className={classes.rightPart}>
           {/* <Button
             variant='contained'
