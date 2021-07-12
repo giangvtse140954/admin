@@ -195,7 +195,7 @@ const GarageList = () => {
               id='transition-modal-title'
               style={{ lineHeight: '80px', textAlign: 'center' }}
             >
-              Lý do ban tài khoản
+              Thêm cửa hàng mới
             </h1>
             <BanForm handleClose={handleIsClosed} />
           </div>

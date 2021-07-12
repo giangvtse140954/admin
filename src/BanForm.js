@@ -27,7 +27,7 @@ const BanForm = (props) => {
     <div>
       <Card className={classes.root}>
         <CardHeader
-          title='Nhập thông tin tài khoản'
+          title='Nhập thông tin cửa hàng'
           style={{ marginLeft: '10px' }}
           // subheader='Tạo tài khoản'
         />
@@ -35,7 +35,7 @@ const BanForm = (props) => {
           <form className={classes.form} noValidate autoComplete='off'>
             <TextField
               id='outlined-basic'
-              label='Tài khoản'
+              label='Số điện thoại'
               required
               variant='outlined'
               placeholder='0123456789'
