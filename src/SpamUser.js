@@ -11,7 +11,7 @@ import Fade from '@material-ui/core/Fade';
 import AccountForm from './AccountForm';
 
 const columns = [
-  { field: 'id', headerName: 'Tài khoản', width: 140 },
+  { field: 'id', headerName: 'Số điện thoại', width: 200 },
   { field: 'fullname', headerName: 'Họ và tên', width: 170, editable: true },
   { field: 'email', headerName: 'Email', width: 215, editable: true },
   {
