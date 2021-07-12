@@ -240,10 +240,10 @@ const GarageList = () => {
             style={{ marginRight: 10 }}
             onClick={handleIsOpen}
           >
-            Thêm tài khoản
+            Thêm cửa hàng
           </Button>
           <Button variant='contained' color='secondary' onClick={handleOpen}>
-            Ban tài khoản
+            Ban cửa hàng
           </Button>
         </div>
       </div>

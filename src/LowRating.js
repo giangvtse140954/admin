@@ -212,7 +212,7 @@ const LowRating = () => {
             Thêm nhân viên
           </Button> */}
           <Button variant='contained' color='secondary' onClick={handleOpen}>
-            Ban tài khoản
+            Ban cửa hàng
           </Button>
         </div>
       </div>
