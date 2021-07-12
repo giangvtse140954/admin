@@ -143,7 +143,6 @@ const GarageList = () => {
   const [selected, setSelected] = useState([]);
   const [open, setOpen] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
-  const [status, setStatus] = React.useState(true);
 
   let history = useHistory();
   const handleOpen = () => {
