@@ -201,7 +201,19 @@ const LowRating = () => {
         Danh sách cửa hàng bị đánh giá thấp
       </Typography>
       <div className={classes.searchBox}>
-        <SearchBox content='Tìm cửa hàng theo tên' />
+        <SearchBox
+          content='Tìm cửa hàng theo tên'
+          onInput={(value) => {
+            const flag = [...rows];
+            let result = [];
+            result = flag.filter((item) => {
+              if (item.fullname.toLowerCase().includes(value.toLowerCase())) {
+                return true;
+              }
+            });
+            setAcc(result);
+          }}
+        />
         <div className={classes.rightPart}>
           {/* <Button
             variant='contained'
@@ -211,7 +223,12 @@ const LowRating = () => {
           >
             Thêm nhân viên
           </Button> */}
-          <Button variant='contained' color='secondary' onClick={handleOpen}>
+          <Button
+            variant='contained'
+            color='secondary'
+            onClick={handleOpen}
+            disabled={selected.length > 0 ? false : true}
+          >
             Ban cửa hàng
           </Button>
         </div>

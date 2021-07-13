@@ -22,12 +22,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 const SearchBox = (props) => {
   const classes = useStyles();
+
   return (
     <Paper className={classes.root}>
       <InputBase
         className={classes.input}
         placeholder={props.content}
         inputProps={{ 'aria-label': 'search google maps' }}
+        onInput={(event) => {
+          props.onInput(event.target.value);
+        }}
       />
       <IconButton
         type='submit'

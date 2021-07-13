@@ -199,7 +199,19 @@ const SpamUser = () => {
         Danh sách người dùng xấu
       </Typography>
       <div className={classes.searchBox}>
-        <SearchBox content='Tìm tài khoản theo tên' />
+        <SearchBox
+          content='Tìm tài khoản theo số điện thoại'
+          onInput={(value) => {
+            const flag = [...rows];
+            let result = [];
+            result = flag.filter((item) => {
+              if (item.id.toLowerCase().includes(value.toLowerCase())) {
+                return true;
+              }
+            });
+            setAcc(result);
+          }}
+        />
         <div className={classes.rightPart}>
           {/* <Button
             variant='contained'
@@ -209,7 +221,12 @@ const SpamUser = () => {
           >
             Thêm nhân viên
           </Button> */}
-          <Button variant='contained' color='secondary' onClick={handleOpen}>
+          <Button
+            variant='contained'
+            color='secondary'
+            onClick={handleOpen}
+            disabled={selected.length > 0 ? false : true}
+          >
             Ban tài khoản
           </Button>
         </div>
