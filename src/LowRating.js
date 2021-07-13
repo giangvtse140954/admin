@@ -210,6 +210,7 @@ const LowRating = () => {
               if (item.fullname.toLowerCase().includes(value.toLowerCase())) {
                 return true;
               }
+              return false;
             });
             setAcc(result);
           }}

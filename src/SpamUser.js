@@ -208,6 +208,7 @@ const SpamUser = () => {
               if (item.id.toLowerCase().includes(value.toLowerCase())) {
                 return true;
               }
+              return false;
             });
             setAcc(result);
           }}
