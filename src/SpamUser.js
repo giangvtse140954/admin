@@ -11,7 +11,7 @@ import Fade from '@material-ui/core/Fade';
 import AccountForm from './AccountForm';
 
 const columns = [
-  { field: 'id', headerName: 'Số điện thoại', width: 200 },
+  { field: 'id', headerName: 'Số điện thoại', width: 165 },
   { field: 'fullname', headerName: 'Họ và tên', width: 170, editable: true },
   { field: 'email', headerName: 'Email', width: 215, editable: true },
   {
@@ -67,7 +67,7 @@ const rows = [
     id: '0988246109',
     fullname: 'Nguyen H.Minh Tu',
     email: 'tunhm@gmail.com',
-    birthdate: null,
+    birthdate: '20/11/2003',
     gender: 'Nữ',
     reason: 'Hủy chuyến yêu cầu cứu hộ 6 lần',
   },
@@ -186,11 +186,12 @@ const SpamUser = () => {
               id='transition-modal-title'
               style={{ lineHeight: '80px', textAlign: 'center' }}
             >
-              Lý do ban tài khoản
+              Lý do ban người dùng
             </h1>
             <AccountForm
               handleClose={handleClose}
               handleDelete={handleDelete}
+              reason='Lý do ban người dùng'
             />
           </div>
         </Fade>
@@ -200,7 +201,7 @@ const SpamUser = () => {
       </Typography>
       <div className={classes.searchBox}>
         <SearchBox
-          content='Tìm tài khoản theo số điện thoại'
+          content='Tìm người dùng theo số điện thoại'
           onInput={(value) => {
             const flag = [...rows];
             let result = [];
@@ -228,7 +229,7 @@ const SpamUser = () => {
             onClick={handleOpen}
             disabled={selected.length > 0 ? false : true}
           >
-            Ban tài khoản
+            Ban người dùng
           </Button>
         </div>
       </div>

@@ -14,7 +14,7 @@ import BanForm from './BanForm';
 
 const columns = [
   { field: 'id', headerName: 'No.', width: 100 },
-  { field: 'fullname', headerName: 'Tên cửa hàng', width: 400, editable: true },
+  { field: 'fullname', headerName: 'Tên cửa hàng', width: 220, editable: true },
   { field: 'email', headerName: 'Email', width: 215, editable: true },
   {
     field: 'birthdate',
@@ -30,6 +30,12 @@ const columns = [
     width: 190,
     editable: true,
   },
+  {
+    field: 'addr',
+    headerName: 'Địa chỉ',
+    width: 400,
+    editable: true,
+  },
 ];
 
 const rows = [
@@ -40,6 +46,7 @@ const rows = [
     birthdate: '6/1/2020',
     phone: '0988.246.000',
     rating: '★★★✰✰',
+    addr: '45 Võ Văn Bần, Phường 11, Gò Vấp, TPHCM',
   },
   {
     id: '2',
@@ -47,7 +54,8 @@ const rows = [
     email: 'nhantran@gmail.com',
     birthdate: '9/1/2020',
     phone: '0988.246.910',
-    rating: '★★★★✰',
+    rating: '★★✰✰✰',
+    addr: '24 Võ Văn Lượng, Phường 11, Gò Vấp, TPHCM',
   },
   {
     id: '3',
@@ -56,6 +64,7 @@ const rows = [
     birthdate: '6/1/2020',
     phone: '0988.246.920',
     rating: '★★★★✰',
+    addr: '1 Lê Lợi, Phường 11, Bình Thạnh, TPHCM',
   },
   {
     id: '4',
@@ -64,22 +73,25 @@ const rows = [
     birthdate: '6/1/2021',
     phone: '0988.246.930',
     rating: '★★★★✰',
+    addr: '24 Trịnh Thế Hiển, Phường 11, Quận 9, TPHCM',
   },
   {
     id: '5',
     fullname: 'Sửa xe nhanh chóng Đạt Lợi',
     email: 'tunhm@gmail.com',
-    birthdate: null,
+    birthdate: '20/1/2021',
     phone: '0988.246.904',
     rating: '★★✰✰✰',
+    addr: '12 Nguyễn Thị Minh Khai, Phường 11, Quận 3, TPHCM',
   },
   {
     id: '6',
     fullname: 'Gara Spaxe',
     email: 'vycnn@gmail.com',
-    birthdate: '6/1/2002',
+    birthdate: '6/1/2019',
     phone: '0988.246.950',
     rating: '★✰✰✰✰',
+    addr: '1 Lê Lợi, Phường 11, Quận 1, TPHCM',
   },
   {
     id: '7',
@@ -87,15 +99,17 @@ const rows = [
     email: 'ongjohnvelog@gmail.com',
     birthdate: '6/1/2020',
     phone: '0988.246.960',
-    rating: '★★★★✰',
+    rating: '★✰✰✰✰',
+    addr: '2 Nguyễn Kiện, Quận 3, TPHCM',
   },
   {
     id: '8',
     fullname: 'Tiệm xe 24/7',
     email: 'daothienphuc@gmail.com',
-    birthdate: '6/1/2001',
+    birthdate: '6/1/2021',
     phone: '0988.246.970',
-    rating: '★★★★✰',
+    rating: '★✰✰✰✰',
+    addr: '109 Nguyễn Bỉnh Khiêm, Phường 11, Gò Vấp, TPHCM',
   },
   {
     id: '9',
@@ -104,6 +118,43 @@ const rows = [
     birthdate: '6/4/2020',
     phone: '0988.246.870',
     rating: '★★✰✰✰',
+    addr: '09 Trần Tiến, Phường 11, Gò Vấp, TPHCM',
+  },
+  {
+    id: '10',
+    fullname: 'Sửa xe chất lượng cao Vĩnh Tín',
+    email: 'baohoangpham@gmail.com',
+    birthdate: '6/1/2020',
+    phone: '0988.246.920',
+    rating: '★✰✰✰✰',
+    addr: '100 Nguyễn Văn Lượng, Phường 11, Gò Vấp, TPHCM',
+  },
+  {
+    id: '11',
+    fullname: 'Tiệm sửa xe Thiên Hương',
+    email: 'vuthugiang2610@gmail.com',
+    birthdate: '6/1/2020',
+    phone: '0988.246.000',
+    rating: '★★✰✰✰',
+    addr: '24 Trần Thời, Phường 11, Gò Vấp, TPHCM',
+  },
+  {
+    id: '12',
+    fullname: 'Sửa xe 24h',
+    email: 'hungnguyen@gmail.com',
+    birthdate: '6/1/2021',
+    phone: '0988.246.930',
+    rating: '★✰✰✰✰',
+    addr: '104 Nguyễn Thế Khai, Phường 11, Gò Vấp, TPHCM',
+  },
+  {
+    id: '13',
+    fullname: 'Gara Thanh Hiền',
+    email: 'tunhm@gmail.com',
+    birthdate: '6/12/2019',
+    phone: '0988.246.904',
+    rating: '★★✰✰✰',
+    addr: '102 Nguyễn Kiệm, Phường 11, Gò Vấp, TPHCM',
   },
 ];
 const useStyles = makeStyles((theme) => ({
@@ -219,11 +270,12 @@ const GarageList = () => {
               id='transition-modal-title'
               style={{ lineHeight: '80px', textAlign: 'center' }}
             >
-              Lý do ban tài khoản
+              Lý do ban cửa hàng
             </h1>
             <AccountForm
               handleClose={handleClose}
               handleDelete={handleDelete}
+              reason='Lý do ban cửa hàng'
             />
           </div>
         </Fade>

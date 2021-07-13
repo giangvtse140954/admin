@@ -23,7 +23,7 @@ const AccountForm = (props) => {
     <div className={classes.root}>
       <TextField
         id='outlined-basic'
-        label='Lý do ban tài khoản'
+        label={props.reason}
         required
         variant='outlined'
         placeholder='Vì hủy chuyến quá nhiều'
